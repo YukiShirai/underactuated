@@ -52,6 +52,9 @@ torch
 EOF
 )
 
+jupyter nbextension enable --py widgetsnbextension
+
+
 if [[ -z "${LANG:-}" && -z "${LC_ALL:-}" ]]; then
   echo 'WARNING: LANG and LC_ALL environment variables are NOT set. Please export LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8.' >&2
 fi
